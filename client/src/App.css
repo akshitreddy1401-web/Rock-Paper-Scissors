@@ -1,0 +1,45 @@
+:root { color-scheme: light dark; font-family: system-ui, sans-serif; }
+body { margin: 0; }
+main { max-width: 480px; margin: 0 auto; padding: 24px 16px; text-align: center; }
+h1 { margin-bottom: 0; }
+.sub { margin-top: 4px; opacity: 0.7; }
+button, input { font: inherit; }
+button { padding: 10px 20px; border-radius: 10px; border: 1px solid #8886; background: transparent; cursor: pointer; }
+button:disabled { opacity: 0.5; cursor: not-allowed; }
+button.primary { background: #2563eb; color: #fff; border: none; }
+.lobby { display: flex; flex-direction: column; gap: 12px; margin-top: 28px; }
+.lobby input { padding: 12px; border-radius: 10px; border: 1px solid #8886; text-align: center; font-size: 20px; letter-spacing: 4px; background: transparent; color: inherit; }
+.or { opacity: 0.6; font-size: 14px; }
+.room { margin: 16px 0; display: flex; flex-direction: column; gap: 2px; }
+.room small { opacity: 0.6; }
+.code { font-size: 28px; letter-spacing: 4px; }
+.scores { display: flex; gap: 12px; justify-content: center; margin: 16px 0; }
+.score { flex: 1; padding: 12px; border: 1px solid #8884; border-radius: 12px; display: flex; flex-direction: column; }
+.score b { font-size: 28px; }
+.score span { font-size: 13px; opacity: 0.7; }
+.arena { min-height: 110px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; margin-bottom: 16px; }
+.status { font-size: 18px; opacity: 0.85; }
+.picks { display: flex; align-items: center; gap: 20px; font-size: 56px; }
+.picks small { font-size: 16px; opacity: 0.6; }
+.result { font-size: 22px; font-weight: 700; }
+.result.win { color: #16a34a; }
+.result.lose { color: #dc2626; }
+.result.draw { color: #ca8a04; }
+.choices { display: flex; gap: 12px; justify-content: center; }
+.choices button { flex: 1; font-size: 40px; padding: 14px 8px; display: flex; flex-direction: column; align-items: center; }
+.choices button span { font-size: 14px; margin-top: 4px; }
+.choices button:hover:not(:disabled) { background: #8882; }
+.error { margin-top: 14px; color: #dc2626; }
+.footer { margin-top: 24px; display: flex; gap: 10px; justify-content: center; }
+.userbar { display: flex; justify-content: space-between; align-items: center; gap: 12px; font-size: 14px; padding-bottom: 12px; border-bottom: 1px solid #8883; margin-bottom: 8px; }
+.userbar button { padding: 6px 12px; font-size: 13px; }
+button.link { border: none; background: none; text-decoration: underline; opacity: 0.8; margin-top: 16px; }
+.lobby input[type="password"], .lobby input[type="text"] { letter-spacing: normal; font-size: 16px; }
+.roomlist { margin-top: 28px; text-align: left; }
+.roomlist h3 { margin: 0 0 8px; }
+.roomitem { display: flex; justify-content: space-between; align-items: center; gap: 8px; padding: 10px 12px; border: 1px solid #8884; border-radius: 12px; margin-bottom: 8px; }
+.roomitem > div:first-child { display: flex; flex-direction: column; }
+.roomitem small { opacity: 0.7; }
+.roomitem .actions { display: flex; gap: 6px; }
+.roomitem button { padding: 6px 12px; font-size: 13px; }
+.code.small { font-size: 18px; }
